@@ -1,0 +1,295 @@
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#d97706" />
+
+    <title>Kerusakan Lampu Jalan di Jl. Melati | CityCare App</title>
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="responsive.css" />
+
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <header>
+      <button id="skip-link" class="skip-link">Menuju konten utama</button>
+
+      <div class="container">
+        <div class="header-content">
+          <a class="brand-name__link" href="#/">
+            <img class="brand-name__link__image" src="images/logo.png" alt="CityCare Logo" />
+            <span class="brand-name__link__text">CityCare App</span>
+          </a>
+          <nav id="navigation-drawer" class="navigation-drawer">
+            <ul id="navlist-main" class="navigation-drawer__navlist-main">
+              <li>
+                <a id="report-list-button" class="report-list-button" href="#/">Daftar Laporan</a>
+              </li>
+              <li>
+                <a id="bookmark-button" class="bookmark-button" href="#/bookmark">
+                  Laporan Tersimpan
+                </a>
+              </li>
+            </ul>
+            <ul id="navlist" class="navigation-drawer__navlist">
+              <li id="push-notification-tools" class="push-notification-tools">
+                <button id="subscribe-button" class="btn subscribe-button">
+                  Subscribe <i class="fas fa-bell"></i>
+                </button>
+              </li>
+              <li>
+                <a id="new-report-button" class="btn new-report-button" href="#/new">
+                  Buat Laporan <i class="fas fa-plus"></i>
+                </a>
+              </li>
+              <li>
+                <a id="logout-button" class="logout-button" href="#/logout">
+                  <i class="fas fa-sign-out-alt"></i> Logout
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <button id="drawer-button" class="drawer-button">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main tabindex="-1" id="main-content" class="main-content">
+      <section>
+        <div class="report-detail__container">
+          <div id="report-detail" class="report-detail">
+            <div class="report-detail__header">
+              <h1 id="title" class="report-detail__title">Kerusakan Lampu Jalan di Jl. Melati</h1>
+
+              <div class="report-detail__more-info">
+                <div class="report-detail__more-info__inline">
+                  <div id="report-detail-createdat" class="report-detail__createdat">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>18 November 2024</span>
+                  </div>
+                  <div
+                  
+                    id="report-detail-location-place-name"
+                    class="report-detail__location__place-name"
+                  >
+                    <i class="fas fa-map"></i>
+                    <span>Bandung, Indonesia</span>
+                  </div>
+                </div>
+                <div class="report-detail__more-info__inline">
+                  <div
+                    id="report-detail-location-latitude"
+                    class="report-detail__location__latitude"
+                  >
+                    Latitude:
+                    <span>-6.902515</span>
+                  </div>
+                  <div
+                    id="report-detail-location-longitude"
+                    class="report-detail__location__longitude"
+                  >
+                    Longitude:
+                    <span>107.618782</span>
+                  </div>
+                </div>
+                <div id="report-detail-author" class="report-detail__author">
+                  Dilaporkan oleh:
+                  <span>Nur Rizki Adi</span>
+                </div>
+              </div>
+
+              <div id="damage-level" class="report-detail__damage-level">
+                <span class="report-detail__damage-level__moderate" data-damage-level="moderate">
+                  Kerusakan Sedang
+                </span>
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="report-detail__images__container">
+                <div id="report-detail-images" class="report-detail__images">
+                  <img class="report-detail__image" src="https://picsum.photos/1200/700?random=1" alt="Tampak ada 3 buah lampu yang mati"/>
+                </div>
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="report-detail__body">
+                <div class="report-detail__body__description__container">
+                  <h2 class="report-detail__description__title">Informasi Lengkap</h2>
+                  <div id="description" class="report-detail__description__body">
+                    <p>
+                      Lampu penerangan jalan umum (PJU) di kawasan Jalan Dago, Bandung, dilaporkan
+                      padam sejak beberapa hari terakhir. Kerusakan ini menjadi perhatian warga
+                      karena jalan tersebut merupakan salah satu jalur utama yang ramai dilalui
+                      kendaraan, terutama pada malam hari. Kondisi gelap ini berpotensi meningkatkan
+                      risiko kecelakaan lalu lintas dan tindakan kriminal.
+                    </p>
+
+                    <p>
+                      Menurut pantauan warga, beberapa tiang lampu di sepanjang jalan, terutama di
+                      dekat simpang Dago, tidak menyala sama sekali. "Kami merasa terganggu karena
+                      Jalan Dago adalah kawasan yang biasanya terang. Sekarang, kalau lewat sini
+                      malam-malam jadi was-was," ungkap Nur Rizki Adi, pelapor sekaligus warga
+                      setempat.
+                    </p>
+
+                    <p>
+                      Warga berharap pihak terkait segera melakukan perbaikan agar kenyamanan dan
+                      keamanan dapat kembali terjaga. Sebagai salah satu destinasi wisata populer di
+                      Bandung, kondisi ini juga dinilai dapat merusak citra kota di mata pengunjung.
+                      "Semoga ini segera diperbaiki, apalagi musim liburan sebentar lagi," tambah
+                      Arif.
+                    </p>
+                  </div>
+                </div>
+
+                <hr />
+
+                <div class="report-detail__body__actions__container">
+                  <h2>Aksi</h2>
+                  <div class="report-detail__actions__buttons">
+                    <div id="save-actions-container">
+                      <button id="report-detail-save" class="btn btn-transparent">
+                        Simpan laporan <i class="far fa-bookmark"></i>
+                      </button>
+                    </div>
+                    <div id="notify-me-actions-container">
+                      <button id="report-detail-notify-me" class="btn btn-transparent">
+                        Try Notify Me <i class="far fa-bell"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <hr />
+        <div class="report-detail__comments__container">
+          <div class="report-detail__comments-form__container">
+            <h2 class="report-detail__comments-form__title">Beri Tanggapan</h2>
+            <form id="comments-list-form" class="report-detail__comments-form__form">
+              <textarea
+                name="body"
+                placeholder="Beri tanggapan terkait laporan."
+              ></textarea>
+              <div id="submit-button-container">
+                <button class="btn" type="submit">Tanggapi</button>
+              </div>
+            </form>
+          </div>
+          <hr />
+          <div class="report-detail__comments-list__container">
+            <div id="report-detail-comments-list">
+              <ul class="report-detail__comments-list">
+                <li class="report-detail__comment-item">
+                  <img
+                    class="report-detail__comment-item__photo"
+                    src="https://ui-avatars.com/api/?name=Dimas Maulana&background=random"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <div class="report-detail__comment-item__body">
+                    <div class="report-detail__comment-item__body__more-info">
+                      <div class="report-detail__comment-item__author">Dimas Maulana</div>
+                    </div>
+                    <p class="report-detail__comment-item__text">
+                      Wah, benar banget! Saya juga lewat sini kemarin malam dan rasanya ngeri. Mohon
+                      segera ditindaklanjuti.
+                    </p>
+                  </div>
+                </li>
+                <li class="report-detail__comment-item">
+                  <img
+                    class="report-detail__comment-item__photo"
+                    src="https://ui-avatars.com/api/?name=Arsy Opraza&background=random"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <div class="report-detail__comment-item__body">
+                    <div class="report-detail__comment-item__body__more-info">
+                      <div class="report-detail__comment-item__author">Arsy Opraza</div>
+                    </div>
+                    <p class="report-detail__comment-item__text">
+                      Setuju, ini harus cepat diperbaiki. Lampu jalan itu penting banget untuk
+                      keselamatan pengguna jalan.
+                    </p>
+                  </div>
+                </li>
+                <li class="report-detail__comment-item">
+                  <img
+                    class="report-detail__comment-item__photo"
+                    src="https://ui-avatars.com/api/?name=Alida&background=random"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <div class="report-detail__comment-item__body">
+                    <div class="report-detail__comment-item__body__more-info">
+                      <div class="report-detail__comment-item__author">Alida</div>
+                    </div>
+                    <p class="report-detail__comment-item__text">
+                      Masalah lampu jalan mati ini sering terjadi di Bandung. Ada baiknya pemerintah
+                      cek rutin, jangan tunggu ada laporan dulu.
+                    </p>
+                  </div>
+                </li>
+                <li class="report-detail__comment-item">
+                  <img
+                    class="report-detail__comment-item__photo"
+                    src="https://ui-avatars.com/api/?name=Abdul Hafizh&background=random"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <div class="report-detail__comment-item__body">
+                    <div class="report-detail__comment-item__body__more-info">
+                      <div class="report-detail__comment-item__author">Abdul Hafiidh</div>
+                    </div>
+                    <p class="report-detail__comment-item__text">
+                      Terima kasih buat warga yang sudah melapor. Semoga dinas terkait segera
+                      bertindak.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <hr />
+        <div class="footer-content">
+          <a class="brand-name__link" href="#/">
+            <img class="brand-name__link__image" src="images/logo.png" alt="CityCare Logo" />
+            <span class="brand-name__link__text">CityCare App</span>
+          </a>
+          <p class="copyright">© 2025 Dicoding. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
