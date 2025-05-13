@@ -1,0 +1,31 @@
+:root {
+  --white: #fff;
+  --primary-text: #212121;
+  --primary-color: #673ab7;
+  --content-padding: 20px;
+}
+
+body {
+  margin: 0;
+
+  font-family: system-ui, sans-serif;
+}
+
+.main-header {
+  min-height: 60px;
+  padding-inline: var(--content-padding);
+  background-color: var(--primary-color);
+
+  color: var(--white);
+  display: grid;
+  align-items: center;
+}
+
+.content {
+  padding: var(--content-padding);
+}
+
+.content-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
