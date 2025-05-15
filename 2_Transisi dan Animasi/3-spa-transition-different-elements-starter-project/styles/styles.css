@@ -1,0 +1,148 @@
+:root {
+  --white: #fff;
+  --primary-text: #212121;
+  --primary-color: #673ab7;
+  --content-padding: 20px;
+}
+
+@keyframes move-out {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes move-in {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+::view-transition-old(root) {
+  animation-name: move-out;
+  animation-duration: 500ms;
+}
+
+::view-transition-new(root) {
+  animation-name: move-in;
+  animation-duration: 500ms;
+}
+
+body {
+  margin: 0;
+
+  font-family: system-ui, sans-serif;
+}
+
+/* Loader */
+.loader {
+  text-align: center;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader::after {
+  content: '';
+  display: inline-block;
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  border: 6px solid #d4d4d4aa;
+  border-bottom-color: var(--primary-color);
+  border-radius: 100%;
+
+  animation-name: rotation;
+  animation-duration: 1000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* HEADER */
+.main-header {
+  min-height: 60px;
+  padding-inline: var(--content-padding);
+  background-color: var(--primary-color);
+
+  color: var(--white);
+  display: grid;
+  align-items: center;
+
+  view-transition-name: main-header;
+}
+
+.content {
+  padding: var(--content-padding);
+}
+
+/* MAIN */
+.content-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.cats-list {
+  list-style: none;
+  margin-block: 16px;
+  padding-inline-start: 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.cats-item {
+  border: 1px solid #d4d4d4;
+}
+
+.cats-item__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.cats-item__image {
+  height: auto;
+  width: 100%;
+  aspect-ratio: 16/9;
+
+  display: block;
+}
+
+.cats-item__title {
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.cat-detail__image-container {
+  background-color: #bdbdbd;
+}
+
+.cat-detail__image {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+
+  view-transition-name: cat-image;
+}
+
+::view-transition-group(cat-image) {
+  animation-duration: 500ms;
+}
