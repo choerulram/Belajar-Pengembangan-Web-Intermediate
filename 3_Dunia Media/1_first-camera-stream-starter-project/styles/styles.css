@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+  padding-block: 20px 10px;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.main-content {
+  padding-block: 20px;
+}
+
+.container {
+  padding: 20px 10px;
+}
+
+/* Camera */
+.camera__video {
+  background-color: #3d3d3d;
+}
+
+.camera__canvas {
+  display: none;
+}
+
+.camera__tools_buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.camera__tools_buttons > button {
+  padding: 8px 20px;
+}
+
+.camera__output {
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: repeat(1, minmax(200px, 1fr));
+  justify-content: center;
+  gap: 16px;
+}
+
+.camera__video,
+.camera__output img {
+  width: 100%;
+}
+
+@media screen and (width > 600px) {
+  .camera__output {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (width > 1000px) {
+  .camera__output {
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+  }
+}
