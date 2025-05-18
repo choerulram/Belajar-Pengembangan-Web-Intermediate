@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Camera Demo</title>
+
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="scripts/scripts.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Camera Demo</h1>
+    </header>
+
+    <main class="main-content">
+      <article class="container">
+        <h2>Input Kamera</h2>
+
+        <div class="camera">
+          <video id="camera-video" class="camera__video">Video stream not available.</video>
+          <canvas id="camera-canvas" class="camera__canvas"></canvas>
+
+          <div class="camera__tools">
+            <div class="camera__tools_buttons">
+              <button id="camera-take-button" class="camera__tools__take-button" type="button">
+                Ambil Gambar
+              </button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="container">
+        <h2>Output Kamera</h2>
+
+        <ul id="camera-list-output" class="camera__output"></ul>
+      </article>
+    </main>
+  </body>
+</html>
